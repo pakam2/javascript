@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Where to put JS</title>
+    <script type="text/javascript">
+      function test(){
+        document.getElementById("pierwszy").style.color = "red";
+      };
+      function test_dwa(){
+        document.getElementsByTagName("p")[0].innerHTML = "sasas";
+
+
+      };
+
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+    <br>
+    <p id="pierwszy">Pierwszy paragraf</p>
+    <p>Drugi paragraf</p>
+    <button type="button" name="button" onclick="test()">Zmień</button><br>
+    <button type="button" name="button" onclick="test_dwa()">Zmień tekst</button>
+  </body>
+</html>
