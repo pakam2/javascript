@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Output of JS</title>
+  </head>
+  <body>
+
+    <!--
+    JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+
+
+    -->
+<p>Hej</p>
+<script type="text/javascript">
+  function pokaz(){
+    document.write("sasasa");
+
+  };
+  function show_alert(){
+    var zmienna = "Hej to ja";
+    window.alert(zmienna);
+
+
+  };
+  function in_consol_log(){
+    console.log("sadas")
+
+
+  };
+</script>
+<button type="button" name="button" onclick="pokaz()">document.write</button><br>
+
+<button type="button" name="button" onclick="show_alert()">window.alert</button>
+  </body>
+</html>
