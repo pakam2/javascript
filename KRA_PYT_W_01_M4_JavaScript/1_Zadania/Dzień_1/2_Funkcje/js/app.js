@@ -35,7 +35,7 @@ var zadanietrzecie= function () {
 function calculateTip(amount, raiting) {
   var tip = 0;
   var textToReturn = 'Opis nieczytelny';
-    
+
   switch (raiting) {
     case "Bardzo dobra obsluga":
       tip = 25;
@@ -57,3 +57,27 @@ function calculateTip(amount, raiting) {
 
 }
 }
+
+
+var teacher = {
+  name:"Paweł",
+  surname:"Kamiński",
+  teaches:function()
+    {
+    console.log("programista");
+
+  },
+  aboutMe: function(){
+    console.log(this.name);
+  }
+
+
+}
+
+var Car = function() {
+  this.type = "audi",
+  this.price = 20000
+
+};
+
+var bmw = new Car ("bmw", 30000);

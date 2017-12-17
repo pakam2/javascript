@@ -1,3 +1,8 @@
-/**
- * Created by Jacek on 2016-01-11.
- */
+var Osoba = function (name, surname, age) {
+  this.name = name;
+  this.surname = surname;
+  this.age = age;
+};
+Osoba.prototype.writename = function () {
+  console.log(this.name);
+};
