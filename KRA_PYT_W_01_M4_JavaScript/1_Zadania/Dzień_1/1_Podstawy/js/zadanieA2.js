@@ -1,13 +1,10 @@
 /**
  * Created by Jacek on 2016-01-11.
- */
-
-
-function myEval(a, b, operation) {
+ */function myEval(a, b, operation) {
     var result = 0;
     switch(operation) {
         case'+': result = a + b;
-        case'-': result = a - value.b;
+        case'-': result = a - b;
         case'/': result = a / b;
         case'*': result = a * b;
         case'%': result = a % b;

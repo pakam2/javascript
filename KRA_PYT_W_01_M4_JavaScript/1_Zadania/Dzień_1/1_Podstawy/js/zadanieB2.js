@@ -6,6 +6,14 @@
 function canCreateTriagle(a, b, c) {
     // Do liczb odwołuj się przez zmienne a, b i c.
     // Pamiętaj o zwróceniu poprawnych danych (return true albo return false).
+    flag = false;
+    if (a + b >c && b + c > a && a + c > b){
+      flag = true;
+    }
+
+
+
+    return flag;
 }
 
 console.log("z liczb 5, 6, 4 można stworzyć trójkąt (powinno zwrócić true) " + canCreateTriagle(5, 6, 4));
