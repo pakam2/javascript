@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tablice - zadanie A3</title>
+  </head>
+  <body>
+    <script>
+    function distFromAvarage(array){
+      var sum = 0;
+      var mylist = []
+      var sum_avarege = 0;
+      for (i = 0; i < array.length; i++){
+          sum += array[i];
+      }
+        sum_avarege = Math.round(sum / array.length)
+      for (i = 0; i <array.length; i++){
+        mylist.push(Math.abs(array[i] - sum_avarege));
+
+      }
+      console.log(mylist);
+    }
+    </script>
+  </body>
+</html>
