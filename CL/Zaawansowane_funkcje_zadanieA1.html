@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Zaawansowane funkcje - zadanie A1</title>
+  </head>
+  <body>
+  <script>
+  function boilEgg(userTime){
+    var time = 0;
+    var interval = setInterval(function(){
+      time += 5;
+      console.log("Jajko się gotuję " + time + " sekundy");}, 5000)
+    var stopTime = setTimeout (function () {
+        clearInterval(interval);
+        console.log("Jajko się ugotowało")}, userTime);
+
+  }
+</script>
+</body>
+</html>
