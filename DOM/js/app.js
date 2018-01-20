@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
   all_a[2].innerText = "Firefox";
 
 
+  }
 
 
 
