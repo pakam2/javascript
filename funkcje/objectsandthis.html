@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Objects and this</title>
+    <style>
+      .nowa{
+        color:red;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="changeIt()">Return</button>
+    <p class="show">Hej!</p>
+    <script>
+    var myObject = {name: "Paweł",
+                    surname: "Kamiński",
+                    fullname: function(){return document.getElementById("show").innerHTML = this}
+                    };
+    var findIt = document.querySelector(".show");
+
+    var changeIt = function(){
+      return findIt.className = "nowa";
+    }
+    var secondObject = {
+      size: 44,
+      printItAll: function(){
+        return console.log(this.size);
+      }
+
+    };
+    </script>
+  </body>
+</html>
