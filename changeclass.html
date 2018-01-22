@@ -28,6 +28,13 @@
     console.log(con);
     con.className = "two";
   }
+
+  var Car = function(type){
+    this.type = type;
+    console.log(this.type);
+    this.speed = function(){console.log(5000)};
+
+  }
   </script>
   <body>
     <div class="one">This is my text</div><br>
