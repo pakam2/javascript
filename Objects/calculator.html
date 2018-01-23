@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <script>
+    var Calculator = function(){
+      var empytArray = [];
+    }
+    Calculator.prototype.add = function(firstNumber, secondNumber){
+      var suma  = 0;
+      this.firstNumber = firstNumber;
+      this.secondNumber = secondNumber;
+      suma = this.firstNumber + this.secondNumber;
+      console.log("Suma: " + suma);
+      
+    }
+    </script>
+  </body>
+</html>
