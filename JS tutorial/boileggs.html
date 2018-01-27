@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boil Eggs</title>
+  </head>
+  <script>
+  function one (numberOfEggs, time){
+    if (time < 5000){
+      console.log("Sam sobie ugotuj!");
+    }
+    else {
+      var setInt = setInterval(function(){
+          console.log("Gotuje " + numberOfEggs + " jajek");
+          }, 5000);
+      setTimeout(function(){
+        switch (true){
+          case (numberOfEggs == 1):
+            console.log("Ugotowałem " + numberOfEggs + " jajko");
+            break;
+          case (numberOfEggs > 1 && numberOfEggs < 5):
+            console.log("Ugotowałem " + numberOfEggs + " jajka");
+            break;
+          case (numberOfEggs > 5):
+            console.log("Ugotowałem " + numberOfEggs + "jajek");
+          default:
+            console.log("WTF?");
+          }
+      })
+      clearTimeout(setInt);
+    }
+
+  }
+  </script>
+  <body>
+
+  </body>
+</html>
