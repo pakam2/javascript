@@ -1,4 +1,2 @@
 # javascript
-
-
 General purpose (edu)
