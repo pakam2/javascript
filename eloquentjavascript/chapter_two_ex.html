@@ -7,12 +7,15 @@
   <body>
     <script>
     let i = 0;
-    let hash = "#"
+    let hash = "#";
     for(i; i < 7; i++){
 
       console.log(hash);
       hash = hash + "#";
     }
+
+
+
     //FizzBuzz
 
     for(let i = 1; i < 101; i++){
@@ -31,6 +34,29 @@
       else {
         console.log(i);
       }
+    }
+
+    //Chess board
+    let space = " ";
+    let board = "";
+    let size = 12;
+    let divider;
+    for (let i = 1; i < size + 1; i ++){
+      board = hash + space
+      if (size % 2 == 0){
+        // console.log(size % (size - (size/2)));
+        divider = (size - (size/2));
+
+
+        for(j =1; j < size - divider ; j++ ){
+          board += hash;
+          board += space;
+
+        }
+        console.log(board + "\n");
+        // console.log(board.length);
+      }
+      board = "";
     }
 
     </script>
