@@ -10,6 +10,31 @@
 
         console.log("First function");
       }
+      // firstTest();
+
+      //Variable scope
+      let globalVariable = "Name";
+      //makeACopy(globalVariable);
+
+      function makeACopy(x){
+        x = "+" + x + "+";
+        console.log("Zmienna w funkcji");
+        console.log(x);
+      }
+
+      //function defined as an literal
+      let funLiteral = function(x) { console.log(x * x);}
+      //funLiteral(4);
+
+      //function defined as an arrow
+
+      const arrowFunct = (text="Arrow function") => console.log(text);
+      // arrowFunct("Arrow function with new value");
+      function multiplier(factor){
+        return number => factor * number;
+      }
+      let twice = multiplier(4);
+      console.log(twice);
     </script>
 
   </body>
