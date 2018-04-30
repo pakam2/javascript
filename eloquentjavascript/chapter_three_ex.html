@@ -2,9 +2,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Exercises form chapter three</title>
+    <title>Exercises from chapter three</title>
   </head>
   <body>
+<script>
 
+
+//exercise one
+//finding a min number
+
+function minimum(firstNumber, secondNumber){
+  if (firstNumber > secondNumber){
+    console.log("The smallest number is: " + secondNumber);
+  }
+  else{
+    console.log("The smallest number is: " + firstNumber);
+  }
+
+}
+
+
+//exercise two
+//recursive function
+function isEven(num){
+  if (num == 0) {
+    return true;
+  }
+  else if (num == 1){
+    return false;
+  }
+  else if (num < 0){
+    return isEven(-num);
+  }
+  else {
+    return isEven(num - 2);
+  }
+}
+</script>
   </body>
 </html>
