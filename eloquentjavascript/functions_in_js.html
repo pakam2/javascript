@@ -35,6 +35,28 @@
       }
       let twice = multiplier(4);
       console.log(twice);
+
+
+      //short version of a Function
+      //find the lowest number from two passed
+      function getMin(a, b){
+        return (a > b) ? b : a;
+      }
+
+      //power Function
+      function pow(a, b){
+        if (b == 0 || b < 0){
+          return 1;
+        }
+        else{
+          let end_value = a;
+          for (let i = 1 ; i < b; i++) {
+            end_value *= a;
+          }
+          return end_value;
+        }
+      }
+
     </script>
 
   </body>

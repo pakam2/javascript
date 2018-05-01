@@ -38,6 +38,44 @@ function isEven(num){
     return isEven(num - 2);
   }
 }
+
+//exercise three
+//bean counting
+
+function countBs(text){
+  //counts the number of letter "B" in the string
+  let counter = 0;
+    for (let i = 0; i < text.length; i++){
+      if (text[i] == "B"){
+          counter += 1;
+      }
+    }
+	return counter;
+}
+
+
+//count the number of any given letter in a given string
+function countChar(text, ch){
+  let counter = 0;
+  for (let i = 0; i < text.length; i++){
+    if (text[i] == ch) counter += 1;
+  }
+  return counter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
   </body>
 </html>
