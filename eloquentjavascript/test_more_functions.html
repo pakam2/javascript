@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test more functions</title>
+  </head>
+  <body>
+<script>
+
+//fibonacci - with while loop
+
+function fib(num){
+  let counter = 0;
+  let fib_array = [];
+  let previous = 0;
+  let next_number = 0;
+  fib_array.push(0);
+  while (num > 0){
+
+    if (counter == 0) {
+      fib_array.push(1)
+      counter +=1;
+    }
+    else{
+
+    next_number = counter + previous;
+    previous = counter;
+    counter = next_number;
+    fib_array.push(next_number);
+    // console.log(num);
+
+    num -= 1;
+  }
+  }
+  return fib_array;
+}
+
+//shows a fibonacci number with a given index
+//using recursivnes
+function fibRec(num){
+
+  if (num == 0 || num ==1){
+    return num;
+  }
+  else {
+    return fibRec(num - 1) + fibRec(num -2);
+  }
+}
+
+
+</script>
+  </body>
+</html>
