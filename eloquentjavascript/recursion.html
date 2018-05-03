@@ -8,7 +8,7 @@
 <script>
 
 
-//Recursive function that finds an equation for a given number, by adding (to 1) 5 or multipling (1) by 3. 
+//Recursive function that finds an equation for a given number, by adding (to 1) 5 or multipling (1) by 3.
 function findSolution(target) {
   function find(current, history) {
     if (current == target) {
@@ -22,6 +22,30 @@ function findSolution(target) {
   return find(1, "1");
 }
 
+
+
+let company = {
+  sales: [{name: 'John', salary: 1000}, {name: 'Alice', salary: 600 }],
+  development: {
+    sites: [{name: 'Peter', salary: 2000}, {name: 'Alex', salary: 1800 }],
+    internals: [{name: 'Jack', salary: 1300}]
+  }
+};
+
+// The function to do the job
+function sumSalaries(department) {
+  if (Array.isArray(department)) { // case (1)
+    return department.reduce((prev, current) => prev + current.salary, 0); // sum the array
+  } else { // case (2)
+    let sum = 0;
+    for (let subdep of Object.values(department)) {
+      sum += sumSalaries(subdep); // recursively call for subdepartments, sum the results
+    }
+    return sum;
+  }
+}
+
+alert(sumSalaries(company)); // 6700
 
 </script>
   </body>
