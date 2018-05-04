@@ -75,6 +75,16 @@ function reverseArrayInPlace(arr){
   let arrayValue = [1, 2, 3, 4, 5];
 
 
+//Bulid a list Structure
+
+function arrayToList(arr){
+  let list = null;
+  for (let i = 0; i < arr.length; i++){
+    list = {value: arr[arr.length - i - 1], rest:list}
+  }
+  return list;
+}
+
     </script>
   </body>
 </html>
