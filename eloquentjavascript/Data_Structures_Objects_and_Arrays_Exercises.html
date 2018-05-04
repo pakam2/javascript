@@ -7,10 +7,73 @@
   <body>
     <script>
 
-    let sq = {
-      sleep: true,
-      events: ["work", "fun"]
-    };
+//Generate a range of numbers by giving start and end number of the range
+    function range(start, end) {
+      let return_array = [];
+      for (let i = start; i < end + 1; i++){
+		      return_array.push(i);
+        }
+      return return_array;
+  }
+
+
+//Sum a array
+  function sumArray(arr){
+    let return_sum = 0;
+    for(let x in arr){
+      //console.log(arr[x]);
+      if ( ! isNaN(Number(arr[x])) ) {
+        return_sum = return_sum + Number(arr[x]);
+      }
+    }
+    return return_sum;
+  }
+
+//Genarate a range of numbers by passing a start, end and step
+
+  function rangeStep(start, end, step=1){
+    let return_array = [];
+    if (step >= 0){
+      for (let i = start; i < end + 1; i = i + step){
+        return_array.push(i);
+      }
+    } else if(step <= 0) {
+        for (let i = end; i < start +1; i = i - step){
+          return_array.unshift(i);
+        }
+    }
+
+    return return_array;
+  }
+
+
+//Reverse array
+
+function reverseArray(arr){
+  let return_array = [];
+  for (let i = 0; i < arr.length; i++){
+    return_array.unshift(arr[i]);
+  }
+  return return_array;
+}
+
+//Reversing array in place
+
+function reverseArrayInPlace(arr){
+  let firstToSwap,
+      secondToSwap;
+  for (let i = 0; i < Math.floor(arr.length / 2); i++){
+    firstToSwap = arr[i];
+    secondToSwap = arr[arr.length - 1 -i];
+    //swapping elements
+    arr[arr.length -1 -i] = firstToSwap;
+    arr[i] = secondToSwap;
+  }
+  return arr;
+}
+
+  let arrayValue = [1, 2, 3, 4, 5];
+
 
     </script>
   </body>
