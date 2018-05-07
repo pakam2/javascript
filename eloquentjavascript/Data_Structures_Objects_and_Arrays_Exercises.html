@@ -85,6 +85,29 @@ function arrayToList(arr){
   return list;
 }
 
+
+//Adds an element at the beginning of the list
+function prepend(el, list){
+  list = {value: el, rest:list};
+  return list;
+}
+
+//Return the value of a given index or if there is no such index return "undefined"
+
+function nth(list, number){
+  let return_index;
+  for(let i = 0; i < list.length;i++){
+    if (i == number){
+      return_index = list[i];
+    }
+  }
+  return return_index == undefined ? undefined : return_index;
+
+}
+
+
+//Deep comparison
+
     </script>
   </body>
 </html>
