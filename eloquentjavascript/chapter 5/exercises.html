@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 5 exercises</title>
+  </head>
+  <body>
+<script>
+
+
+//Flattening
+//Combines elements of different arrays to one array
+let arrays = [[1, 2, 3], [4, 5], [6]];
+
+function flatt(array) {
+
+  let return_array = [];
+
+  for (let element of array) {
+    for (let x of element){
+      return_array.push(x);
+    }
+  }
+  return return_array;
+}
+
+console.log(flatt(arrays));
+
+
+
+</script>
+  </body>
+</html>
