@@ -15,6 +15,21 @@
       return ("Imię: " + this.name + ", type: " + this.type );
     }
   }
+
+  let symbolVal = Symbol("t");
+
+  Array.prototype[symbolVal] = function () { return "Hej"};
+
+  let dic = {
+    jeden:"Jeden",
+    dwa: "Dwa",
+    trzy: "Trzy"
+  }
+
+  function countKeys(obj){
+    console.log(Object.keys(obj).length);
+  }
+
 </script>
   </body>
 </html>
