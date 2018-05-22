@@ -1,2 +1,2 @@
 # javascript
-General purpose (edu)
+General purpose (edu), small JS projects
